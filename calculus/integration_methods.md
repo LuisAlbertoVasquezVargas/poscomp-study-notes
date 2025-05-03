@@ -1,3 +1,5 @@
+<!-- File: calculus/integration_methods.md -->
+
 # Integration Methods
 
 TODO(luisvasquez): Add derivation and explanation of the integration by parts formula.
@@ -10,7 +12,9 @@ TODO(luisvasquez): Add derivation and explanation of the integration by parts fo
 
 The integration by parts formula is:
 
-∫u·dv = u·v − ∫v·du
+$$
+\int u\,dv = uv - \int v\,du
+$$
 
 ---
 
@@ -20,21 +24,26 @@ The integration by parts formula is:
 
 Start from the product rule:
 
-d(uv)/dx = u·dv/dx + v·du/dx
+$$
+\frac{d}{dx}(uv) = u\,\frac{dv}{dx} + v\,\frac{du}{dx}
+$$
 
 Now integrate both sides:
 
-∫d(uv)/dx dx = ∫u·dv + ∫v·du
+$$
+\int \frac{d}{dx}(uv)\,dx = \int u\,dv + \int v\,du
+$$
 
 So:
 
-uv = ∫u·dv + ∫v·du  
-⇒ ∫u·dv = uv − ∫v·du
+$$
+uv = \int u\,dv + \int v\,du \Rightarrow \int u\,dv = uv - \int v\,du
+$$
 
 ---
 
 ### Examples
 
-- ∫x·eˣ dx
-- ∫ln(x) dx
-- ∫x·cos(x) dx
+- $\int x\,e^x\,dx$
+- $\int \ln(x)\,dx$
+- $\int x\,\cos(x)\,dx$
