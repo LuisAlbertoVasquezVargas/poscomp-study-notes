@@ -17,6 +17,7 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 - [Combinations](./combinatorics/combinations.md)
 
 ### Differential and Integral Calculus
+- [Pre-Calculus Formulas](./calculus/pre_calculus.md)
 - [Integration Methods](./calculus/integration_methods.md)
 
 ---
