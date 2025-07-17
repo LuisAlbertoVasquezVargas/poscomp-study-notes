@@ -1,3 +1,5 @@
+<!-- File: README.md -->
+
 # POSCOMP Study Notes 📚
 
 Organized notes, formulas, and references for studying key topics for the POSCOMP exam.
@@ -19,11 +21,14 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 ### Differential and Integral Calculus
 - [Pre-Calculus Formulas](./calculus/pre_calculus.md)
 - [Integration Methods](./calculus/integration_methods.md)
+- [Differentiation](./calculus/differentiation.md)
+
+### Geometry
+- [Distance from a Point to a Line](./geometry/point_line_distance.md)
 
 ---
 
 ## 🗂 Other Resources
-
 - [Past POSCOMP Exams – GitHub](https://github.com/amimaro/Provas-POSCOMP)
 
 ---
