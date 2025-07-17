@@ -17,6 +17,7 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 - [Introduction to Linear Programming](./linear_algebra/linear_programming.md)
 - [Linear Transformations and Matrices](./linear_algebra/linear_transformations.md)
 - [Eigenvalues and Eigenvectors](./linear_algebra/eigenvalues.md)
+- [Characteristic Polynomial](./linear_algebra/characteristic_polynomial.md)
 - [Diagonalization](./linear_algebra/diagonalization.md)
 - [Inner Product Spaces](./linear_algebra/inner_product_spaces.md)
 - [Orthonormal Bases](./linear_algebra/orthonormal_bases.md)
