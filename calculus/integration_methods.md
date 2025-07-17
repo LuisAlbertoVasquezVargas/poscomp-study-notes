@@ -16,6 +16,14 @@ $$
 \int u\,dv = uv - \int v\,du
 $$
 
+📝 **Mnemonic (Spanish):** *“una vaca vestida de uniforme”*  
+
+This helps remember the sequence:
+
+$$
+u\,dv \;\to\; uv - \int v\,du
+$$
+
 ---
 
 ## Suggested Structure
@@ -37,7 +45,7 @@ $$
 So:
 
 $$
-uv = \int u\,dv + \int v\,du \Rightarrow \int u\,dv = uv - \int v\,du
+uv = \int u\,dv + \int v\,du \;\Rightarrow\; \int u\,dv = uv - \int v\,du
 $$
 
 ---
