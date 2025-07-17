@@ -6,13 +6,12 @@
 
 ## Fundamental Integral
 
-The integral of \( \tfrac{1}{x} \) is:
+The integral of 1/x is:
 
 $$
 \int \frac{1}{x}\,dx = \ln|x| + C
 $$
 
-Where \( C \) is the constant of integration.
+Where **C** is the constant of integration.
 
 ---
-
