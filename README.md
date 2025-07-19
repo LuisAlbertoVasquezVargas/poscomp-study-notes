@@ -33,6 +33,9 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 ### Geometry
 - [Distance from a Point to a Line](./geometry/point_line_distance.md)
 
+### Software Engineering
+- [UML Class Diagrams](./software_engineering/uml_class_diagrams.md)
+
 ---
 
 ## 🗂 Other Resources
