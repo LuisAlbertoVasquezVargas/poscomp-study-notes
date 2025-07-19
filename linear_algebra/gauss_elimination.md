@@ -26,6 +26,7 @@ $$
 
 Where $I$ is the identity matrix and $x$ is the solution vector.
 
+
 ---
 
 ## Allowed Row Operations
@@ -33,6 +34,21 @@ Where $I$ is the identity matrix and $x$ is the solution vector.
 - $R_i \leftrightarrow R_j$ (swap rows)  
 - $R_i *= k$ (multiply row by scalar)  
 - $R_i += k R_j$, $R_i -= k R_j$ (add/subtract row multiple)
+
+---
+
+## Pseudocode
+
+```text
+for each column k in 1..n:
+    Find row r ≥ k with maximum |A[r][k]|
+    Swap row r with row k (partial pivoting)
+    Normalize row k so that A[k][k] = 1
+    for each row i ≠ k:
+        Eliminate A[i][k] by subtracting A[i][k] * row k
+````
+
+This process transforms `[A | b]` into `[I | x]`, where `x` is the solution.
 
 ---
 
@@ -98,14 +114,14 @@ $$
 ### Step 4: Normalize third row
 
 $$
-R_3 *= \frac{1}{3}
+R_3 *= \tfrac{1}{3}
 $$
 
 $$
 \begin{bmatrix}
 1 & 1 & 1 & \vert & 6 \\
 0 & 1 & -1 & \vert & -1 \\
-0 & 0 & 1 & \vert & \frac{8}{3} \\
+0 & 0 & 1 & \vert & \tfrac{8}{3} \\
 \end{bmatrix}
 $$
 
@@ -120,9 +136,9 @@ $$
 
 $$
 \begin{bmatrix}
-1 & 1 & 0 & \vert & \frac{10}{3} \\
-0 & 1 & 0 & \vert & \frac{5}{3} \\
-0 & 0 & 1 & \vert & \frac{8}{3} \\
+1 & 1 & 0 & \vert & \tfrac{10}{3} \\
+0 & 1 & 0 & \vert & \tfrac{5}{3} \\
+0 & 0 & 1 & \vert & \tfrac{8}{3} \\
 \end{bmatrix}
 $$
 
@@ -136,9 +152,9 @@ $$
 
 $$
 \begin{bmatrix}
-1 & 0 & 0 & \vert & \frac{5}{3} \\
-0 & 1 & 0 & \vert & \frac{5}{3} \\
-0 & 0 & 1 & \vert & \frac{8}{3} \\
+1 & 0 & 0 & \vert & \tfrac{5}{3} \\
+0 & 1 & 0 & \vert & \tfrac{5}{3} \\
+0 & 0 & 1 & \vert & \tfrac{8}{3} \\
 \end{bmatrix}
 $$
 
@@ -148,9 +164,9 @@ $$
 
 $$
 \boxed{
-x = \frac{5}{3}, \quad
-y = \frac{5}{3}, \quad
-z = \frac{8}{3}
+x = \tfrac{5}{3}, \;
+y = \tfrac{5}{3}, \;
+z = \tfrac{8}{3}
 }
 $$
 
@@ -158,4 +174,5 @@ $$
 
 ## Sources
 
-- [YouTube – Gaussian Elimination Overview](https://www.youtube.com/watch?v=JzhlfbVmXAE)
+* [YouTube – Gaussian Elimination Overview](https://www.youtube.com/watch?v=JzhlfbVmXAE)
+
