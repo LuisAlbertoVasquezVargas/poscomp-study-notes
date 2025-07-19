@@ -1,4 +1,4 @@
-<!-- File: calculus/pre_calculus.md -->
+<!-- File: pre_calculus/pre_calculus.md -->
 
 # Pre-Calculus Formulas
 

@@ -18,8 +18,11 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 - [Permutations](./combinatorics/permutations.md)
 - [Combinations](./combinatorics/combinations.md)
 
+### Precalculus
+- [Algebraic Identities and Formulas](./precalculus/precalculus.md)
+- [Trigonometric Identities](./precalculus/trigonometry.md)
+
 ### Differential and Integral Calculus
-- [Pre-Calculus Formulas](./calculus/pre_calculus.md)
 - [Integration Methods](./calculus/integration_methods.md)
 - [Differentiation](./calculus/differentiation.md)
 
