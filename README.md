@@ -20,6 +20,7 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 
 ### Discrete Mathematics
 - [Boolean Algebra Identities](./discrete_math/boolean_algebra.md)
+- [Karnaugh Maps](./discrete_math/karnaugh_maps.md)
 
 ### Precalculus
 - [Algebraic Identities and Formulas](./precalculus/precalculus.md)
