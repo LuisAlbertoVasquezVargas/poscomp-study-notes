@@ -18,6 +18,9 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 - [Permutations](./combinatorics/permutations.md)
 - [Combinations](./combinatorics/combinations.md)
 
+### Discrete Mathematics
+- [Boolean Algebra Identities](./discrete_math/boolean_algebra.md)
+
 ### Precalculus
 - [Algebraic Identities and Formulas](./precalculus/precalculus.md)
 - [Trigonometric Identities](./precalculus/trigonometry.md)
