@@ -64,4 +64,63 @@ $$
 
 ---
 
-<!-- TODO: Add intuition and formal properties of determinants -->
+## Properties of the Determinant
+
+### ✅ Determinant of Identity
+$$
+\det(I_n) = 1
+$$
+
+---
+
+### 🔄 Swapping Rows or Columns
+Swapping two rows or two columns **reverses the sign** of the determinant.
+
+---
+
+### 🔁 Linearity in a Column
+If a column is written as a linear combination:
+$$
+C_j = \alpha \mathbf{u} + \beta \mathbf{v}
+$$
+then:
+$$
+\det(\dots, C_j, \dots) = \alpha \cdot \det(\dots, \mathbf{u}, \dots) + \beta \cdot \det(\dots, \mathbf{v}, \dots)
+$$
+
+---
+
+### ➕ Add a Multiple of One Column to Another
+Adding a multiple of one column to another does **not** change the determinant.
+
+---
+
+### ✖️ Scaling a Column
+Multiplying one column by a scalar $r$ multiplies the determinant by $r$.
+
+---
+
+### 🔺 Triangular Matrices
+If $A$ is upper or lower triangular:
+$$
+\det(A) = \prod_{i=1}^{n} a_{ii}
+$$
+
+---
+
+### ✴️ Product of Matrices
+If $A$ and $B$ are square matrices:
+$$
+\det(AB) = \det(A) \cdot \det(B)
+$$
+
+---
+
+### 🚫 Singularity Test
+A matrix is singular (non-invertible) **if and only if**:
+$$
+\det(A) = 0
+$$
+This means its columns (or rows) are linearly dependent.
+
+---
