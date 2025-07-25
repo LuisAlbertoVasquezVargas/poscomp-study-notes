@@ -4,6 +4,8 @@
 
 📺 [3Blue1Brown – Visual Intuition on Determinants](https://www.youtube.com/watch?v=Ip3X9LOh2dk&ab_channel=3Blue1Brown)
 
+📺 [MIT OpenCourseware – 18. Properties of Determinants](https://www.youtube.com/watch?v=srxexLishgY)
+
 ---
 
 ## Rule of Sarrus
