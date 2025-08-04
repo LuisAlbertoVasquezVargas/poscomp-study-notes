@@ -1,3 +1,5 @@
+<!-- File: README.md -->
+
 # POSCOMP Study Notes 📚
 
 Organized notes, formulas, and references for studying key topics for the POSCOMP exam.
@@ -14,6 +16,11 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 ### Combinatorics
 - [Inclusion-Exclusion Principle](./combinatorics/inclusion_exclusion.md)
 - [Permutations and Combinations](./combinatorics/permutations_combinations.md)
+
+### Computer Architecture
+- [Direct-Mapped Cache](./computer_architecture/direct_mapped_cache.md)
+- [Fully Associative Cache](./computer_architecture/fully_associative_cache.md)
+- [Set-Associative Cache](./computer_architecture/set_associative_cache.md)
 
 ### Discrete Mathematics
 - [Boolean Algebra](./discrete_math/boolean_algebra.md)

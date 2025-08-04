@@ -185,3 +185,6 @@ T = M - I - O
 ```
 
 ---
+
+
+https://web.ist.utl.pt/luis.tarrataca/classes/computer_architecture/Chapter4-CacheMemory.pdf
