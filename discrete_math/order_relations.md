@@ -56,6 +56,23 @@ If $a$ relates to $b$ and $b$ relates to $c$, then $a$ relates to $c$.
 
 ---
 
+### 5. **Equivalence Relation**
+
+A relation $R$ on a set $A$ is an **equivalence relation** if it satisfies all three of the following:
+
+- **Reflexive**
+- **Symmetric**
+- **Transitive**
+
+These properties allow elements of $A$ to be grouped into **equivalence classes**, forming a **partition** of the set.
+
+> **Examples:**
+> - "is equal to" on numbers
+> - "has same remainder modulo $n$"
+> - "has same birthday" on a group of people
+
+---
+
 ## 🔸 Types of Order Relations
 
 ### Partial Order
@@ -63,7 +80,7 @@ If $a$ relates to $b$ and $b$ relates to $c$, then $a$ relates to $c$.
 A relation $R$ on $A$ is a **partial order** if it is:
 
 - Reflexive
-- Antisymmetric (as explained above)
+- Antisymmetric
 - Transitive
 
 ---
@@ -82,7 +99,7 @@ $$
 
 A relation $R$ on $A$ is a **strict partial order** if it is:
 
-- Irreflexive (negation of reflexive)
+- Irreflexive
 - Transitive
 - Satisfies the antisymmetry condition implied by irreflexivity and transitivity
 
@@ -100,12 +117,13 @@ $$
 
 ## 🔸 Summary Table
 
-| Property      | Definition                                | Partial Order? | Total Order? | Strict Partial Order? | Strict Total Order? |
-|---------------|-------------------------------------------|---------------|--------------|----------------------|---------------------|
-| Reflexive     | $\forall a, (a,a) \in R$                  | Yes           | Yes          | No                   | No                  |
-| Symmetric     | $\forall a,b, (a,b) \in R \implies (b,a) \in R$ | No            | No           | No                   | No                  |
-| Antisymmetric (Intuitive) | No two distinct elements relate both ways: $\forall a,b, a \neq b \implies \neg\big( (a,b) \in R \wedge (b,a) \in R \big)$ | Yes | Yes | Yes | Yes |
-| Transitive    | $\forall a,b,c, (a,b) \in R \wedge (b,c) \in R \implies (a,c) \in R$ | Yes           | Yes          | Yes                  | Yes                 |
-| Totality      | $\forall a,b, (a,b) \in R \text{ or } (b,a) \in R$ | No            | Yes          | No                   | Yes                 |
+| Property             | Definition                                                                          | Partial Order? | Total Order? | Strict Partial Order? | Strict Total Order? | Equivalence Relation? |
+|----------------------|--------------------------------------------------------------------------------------|----------------|---------------|------------------------|----------------------|------------------------|
+| Reflexive            | $\forall a, (a,a) \in R$                                                             | Yes            | Yes           | No                     | No                   | Yes                    |
+| Symmetric            | $\forall a,b, (a,b) \in R \implies (b,a) \in R$                                     | No             | No            | No                     | No                   | Yes                    |
+| Antisymmetric        | $\forall a \neq b, \neg\big((a,b) \in R \wedge (b,a) \in R\big)$                    | Yes            | Yes           | Yes                    | Yes                  | No                     |
+| Transitive           | $\forall a,b,c, (a,b) \wedge (b,c) \implies (a,c)$                                  | Yes            | Yes           | Yes                    | Yes                  | Yes                    |
+| Totality             | $\forall a,b, (a,b) \in R \text{ or } (b,a) \in R$                                  | No             | Yes           | No                     | Yes                  | No                     |
+| Equivalence Relation | Reflexive, Symmetric, Transitive                                                    | No             | No            | No                     | No                   | Yes                    |
 
 ---
