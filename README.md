@@ -8,111 +8,121 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 
 ## 📌 Index by Topics
 
-### Analytic Geometry
-- [Conics Eccentricity](./analytic_geometry/conics_eccentricity.md)
+### Mathematics
 
-### Artificial Intelligence
-- [Expert Systems](./artificial_intelligence/expert_systems.md)
-- [Genetic Algorithms](./artificial_intelligence/genetic_algorithms.md)
+#### Analytic Geometry
+- [Conics Eccentricity](./mathematics/analytic_geometry/conics_excentricity.md)
 
-### Calculus
-- [Differentiation](./calculus/differentiation.md)
-- [Green's Theorem](./calculus/green_theorem.md)
-- [Integration](./calculus/integration.md)
-- [Integration Methods](./calculus/integration_methods.md)
-- [L'Hôpital's Rule](./calculus/lhospital_rule.md)
+#### Calculus
+- [Differentiation](./mathematics/calculus/differentiation.md)
+- [Green's Theorem](./mathematics/calculus/green_theorem.md)
+- [Integration](./mathematics/calculus/integration.md)
+- [Integration Methods](./mathematics/calculus/integration_methods.md)
+- [L'Hôpital's Rule](./mathematics/calculus/lhospital_rule.md)
 
-### Combinatorics
-- [Inclusion-Exclusion Principle](./combinatorics/inclusion_exclusion.md)
-- [Permutations and Combinations](./combinatorics/permutations_combinations.md)
+#### Combinatorics
+- [Inclusion-Exclusion Principle](./mathematics/combinatorics/inclusion_exclusion.md)
+- [Permutations and Combinations](./mathematics/combinatorics/permutations_combinations.md)
 
-### Compilers
-- [Translation Scheme](./compilers/translation_scheme.md)
+#### Linear Algebra
+- [Characteristic Polynomial](./mathematics/linear_algebra/characteristic_polynomial.md)
+- [Cross Product](./mathematics/linear_algebra/cross_product.md)
+- [Determinants](./mathematics/linear_algebra/determinants.md)
+- [Diagonalizability Criterion](./mathematics/linear_algebra/diagonalizability_criterion.md)
+- [Gauss Elimination](./mathematics/linear_algebra/gauss_elimination.md)
+- [Matrix Inverse](./mathematics/linear_algebra/matrix_inverse.md)
+- [Planes](./mathematics/linear_algebra/planes.md)
+- [Projection: Point to Plane](./mathematics/linear_algebra/projection_point_plane.md)
+- [Subspaces](./mathematics/linear_algebra/subspaces.md)
+- [Vector Span](./mathematics/linear_algebra/vector_span.md)
 
-### Computer Architecture
-- [Cache Hit/Miss](./computer_architecture/cache_hit_miss.md)
-- [Direct-Mapped Cache](./computer_architecture/direct_mapped_cache.md)
-- [Fully Associative Cache](./computer_architecture/fully_associative_cache.md)
-- [Set-Associative Cache](./computer_architecture/set_associative_cache.md)
-- [Two's Complement](./computer_architecture/twos_complement.md)
+#### Linear Programming
+- [Dual Formulation](./mathematics/linear_programming/dual_formulation.md)
 
-### Computer Graphics
-- [Rendering Techniques](./computer_graphics/rendering_techniques.md)
+#### Multivariable Calculus
+- [Jacobian and Implicit Function Theorem](./mathematics/multivariable_calculus/jacobian_implicit_function.md)
 
-### Databases
-- [Deadlock](./databases/deadlock.md)
-- [SQL Joins](./databases/sql_joins.md)
+#### Precalculus
+- [Precalculus](./mathematics/precalculus/precalculus.md)
+- [Trigonometry](./mathematics/precalculus/trigonometry.md)
 
-### Digital Image Processing
-- [Image Filtering](./digital_image_processing/image_filtering.md)
-- [Sampling and Quantization](./digital_image_processing/sampling_quantization.md)
+#### Probability
+- [Basic Probability](./mathematics/probability/basic_probability.md)
+- [Conditional Probability](./mathematics/probability/conditional_probability.md)
+- [Discrete Distributions](./mathematics/probability/discrete_distributions.md)
 
-### Digital Logic
-- [Multiplexer](./digital_logic/multiplexer.md)
-- [Sequential Logic Circuits](./digital_logic/sequential_logic_circuits.md)
+#### Statistics
+- [Hypothesis Testing](./mathematics/statistics/hypothesis_testing.md)
 
-### Discrete Mathematics
-- [Boolean Algebra](./discrete_math/boolean_algebra.md)
-- [Hamming Code](./discrete_math/hamming_code.md)
-- [Karnaugh Maps](./discrete_math/karnaugh_maps.md)
-- [Order Relations](./discrete_math/order_relations.md)
+#### Geometry
+- [Coordinate Systems](./mathematics/geometry/coordinate_systems.md)
+- [Point-Line Distance](./mathematics/geometry/point_line_distance.md)
 
-### Distributed Systems
-- [Failure Models](./distributed_systems/failure_models.md)
-- [Mutual Exclusion Algorithms](./distributed_systems/mutual_exclusion_algorithms.md)
-- [Transparencies](./distributed_systems/transparencies.md)
+---
 
-### Formal Languages
-- [State Machines](./formal_languages/state_machines.md)
+### Computer Science Fundamentals
 
-### Geometry
-- [Coordinate Systems](./geometry/coordinate_systems.md)
-- [Point-Line Distance](./geometry/point_line_distance.md)
+#### Artificial Intelligence
+- [Expert Systems](./computer_science_fundamentals/artificial_intelligence/expert_systems.md)
+- [Genetic Algorithms](./computer_science_fundamentals/artificial_intelligence/genetic_algorithms.md)
 
-### Linear Algebra
-- [Characteristic Polynomial](./linear_algebra/characteristic_polynomial.md)
-- [Cross Product](./linear_algebra/cross_product.md)
-- [Determinants](./linear_algebra/determinants.md)
-- [Diagonalizability Criterion](./linear_algebra/diagonalizability_criterion.md)
-- [Gauss Elimination](./linear_algebra/gauss_elimination.md)
-- [Matrix Inverse](./linear_algebra/matrix_inverse.md)
-- [Planes](./linear_algebra/planes.md)
-- [Projection: Point to Plane](./linear_algebra/projection_point_plane.md)
-- [Subspaces](./linear_algebra/subspaces.md)
-- [Vector Span](./linear_algebra/vector_span.md)
+#### Compilers
+- [Translation Scheme](./computer_science_fundamentals/compilers/translation_scheme.md)
 
-### Linear Programming
-- [Dual Formulation](./linear_programming/dual_formulation.md)
+#### Discrete Mathematics
+- [Boolean Algebra](./computer_science_fundamentals/discrete_math/boolean_algebra.md)
+- [Hamming Code](./computer_science_fundamentals/discrete_math/hamming_code.md)
+- [Karnaugh Maps](./computer_science_fundamentals/discrete_math/karnaugh_maps.md)
+- [Order Relations](./computer_science_fundamentals/discrete_math/order_relations.md)
 
-### Logic
-- [Propositional Logic](./logic/propositional_logic.md)
+#### Databases
+- [Deadlock](./computer_science_fundamentals/databases/deadlock.md)
+- [SQL Joins](./computer_science_fundamentals/databases/sql_joins.md)
 
-### Multivariable Calculus
-- [Jacobian and Implicit Function Theorem](./multivariable_calculus/jacobian_implicit_function.md)
+#### Formal Languages
+- [State Machines](./computer_science_fundamentals/formal_languages/state_machines.md)
 
-### Networking
-- [CIDR Notation](./networking/cidr_notation.md)
-- [DNS Protocol](./networking/dns_protocol.md)
-- [IP Protocol Basics](./networking/ip_protocol_basics.md)
-- [IP Routing](./networking/ip_routing.md)
+#### Logic
+- [Propositional Logic](./computer_science_fundamentals/logic/propositional_logic.md)
 
-### Precalculus
-- [Precalculus](./precalculus/precalculus.md)
-- [Trigonometry](./precalculus/trigonometry.md)
+---
 
-### Probability
-- [Basic Probability](./probability/basic_probability.md)
-- [Conditional Probability](./probability/conditional_probability.md)
-- [Discrete Distributions](./probability/discrete_distributions.md)
+### Computing Technology
 
-### Software Engineering
-- [Software Configuration Management](./software_engineering/software_configuration_management.md)
-- [Software Process Activities](./software_engineering/software_process_activities.md)
-- [Software Quality](./software_engineering/software_quality.md)
-- [UML Class Diagrams](./software_engineering/uml_class_diagrams.md)
+#### Computer Architecture
+- [Cache Hit/Miss](./computing_technology/computer_architecture/cache_hit_miss.md)
+- [Direct-Mapped Cache](./computing_technology/computer_architecture/direct_mapped_cache.md)
+- [Fully Associative Cache](./computing_technology/computer_architecture/fully_associative_cache.md)
+- [Set-Associative Cache](./computing_technology/computer_architecture/set_associative_cache.md)
+- [Two's Complement](./computing_technology/computer_architecture/twos_complement.md)
 
-### Statistics
-- [Hypothesis Testing](./statistics/hypothesys_testing.md)
+#### Computer Graphics
+- [Rendering Techniques](./computing_technology/computer_graphics/rendering_techniques.md)
+
+#### Digital Image Processing
+- [Image Filtering](./computing_technology/digital_image_processing/image_filtering.md)
+- [Sampling and Quantization](./computing_technology/digital_image_processing/sampling_quantization.md)
+
+#### Digital Logic
+- [Multiplexer](./computing_technology/digital_logic/multiplexer.md)
+- [Sequential Logic Circuits](./computing_technology/digital_logic/sequential_logic_circuits.md)
+
+#### Distributed Systems
+- [Failure Models](./computing_technology/distributed_systems/failure_models.md)
+- [Mutual Exclusion Algorithms](./computing_technology/distributed_systems/mutual_exclusion_algorithms.md)
+- [Transparencies](./computing_technology/distributed_systems/transparencies.md)
+
+#### Networking
+- [CIDR Notation](./computing_technology/networking/cidr_notation.md)
+- [DNS Protocol](./computing_technology/networking/dns_protocol.md)
+- [IP Protocol Basics](./computing_technology/networking/ip_protocol_basics.md)
+- [IP Routing](./computing_technology/networking/ip_routing.md)
+
+#### Software Engineering
+- [Software Configuration Management](./computing_technology/software_engineering/software_configuration_management.md)
+- [Software Process Activities](./computing_technology/software_engineering/software_process_activities.md)
+- [Software Quality](./computing_technology/software_engineering/software_quality.md)
+- [UML Class Diagrams](./computing_technology/software_engineering/uml_class_diagrams.md)
 
 ---
 
@@ -123,5 +133,5 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 
 ## ✍️ Author
 
-Luis Vásquez
+Luis Vásquez  
 _Preparing for POSCOMP 2025_
