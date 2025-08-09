@@ -60,3 +60,41 @@ Three cases:
 - For balanced BSTs, operations are O(log n); for skewed BSTs, worst case is O(n).
 
 ---
+
+## 6. AVL Trees
+
+### 6.1 Overview
+
+An **AVL Tree** is a self-balancing binary search tree invented by Adelson-Velsky and Landis.
+
+- It maintains a **balance factor** at each node:
+  - balance factor = height(left subtree) − height(right subtree)
+- Allowed balance factors: **-1, 0, +1**
+- If the balance factor becomes outside this range after insertion or deletion, the tree **rebalances** via rotations.
+
+### 6.2 Rotations
+
+To restore balance, AVL trees use:
+
+- **Single Rotations**:
+  - Left Rotation (for Right-Right imbalance)
+  - Right Rotation (for Left-Left imbalance)
+- **Double Rotations**:
+  - Left-Right Rotation (Left subtree heavy on right child)
+  - Right-Left Rotation (Right subtree heavy on left child)
+
+### 6.3 Properties
+
+- Height is always **O(log n)**.
+- Search, insertion, and deletion are all **O(log n)**.
+- Keeps the tree balanced, avoiding degeneration into a linked list.
+
+### 6.4 POSCOMP Tips
+
+- Be familiar with computing balance factors.
+- Practice applying rotations to fix imbalance after insertion or deletion.
+- Know the four rotation cases and when each applies.
+- Height calculations and balance factor checks are common exam questions.
+
+---
+
