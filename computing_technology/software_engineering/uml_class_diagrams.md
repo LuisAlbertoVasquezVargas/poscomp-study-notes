@@ -1,83 +1,40 @@
-<!-- File: software_engineering/uml_class_diagrams.md -->
+<!-- File: fundamentals_of_computation/software_engineering/uml_relationships.md -->
 
-# UML Class Diagrams
+# UML Relationships
 
----
+Unified Modeling Language (UML) relationships define how classes and other elements interact in object-oriented design.
 
-## Purpose
+## Types of Relationships
 
-UML (Unified Modeling Language) class diagrams visually represent the structure of a system by showing classes, their attributes, methods, and relationships.
+### 1. Association
+A basic relationship between classes that establishes a semantic connection.
 
----
+![UML Relationships](../../assets/uml_relations.svg)
 
-## Key Elements
+### 2. Aggregation
+Represents a "whole-part" relationship where the part can exist independently of the whole.
 
-- **Class**: Represented as a rectangle divided into three sections:  
-  - Top: Class name  
-  - Middle: Attributes (variables)  
-  - Bottom: Methods (functions)
+<div style="background-color: white; display: inline-block;">
+  <img src="../../assets/agg_comp.svg" alt="Aggregation Example" />
+</div>
 
-- **Attributes**: List with visibility, name, and type  
-  - Example: `- age: int` (private attribute)  
-  - Visibility symbols:  
-    - `+` Public  
-    - `-` Private  
-    - `#` Protected
+### 3. Composition
+A stronger form of aggregation where the part cannot exist independently of the whole.
 
-- **Methods**: Similar format to attributes, with parameters and return type  
-  - Example: `+ getAge(): int`
+<div style="background-color: white; display: inline-block;">
+  <img src="../../assets/agg_comp.svg" alt="Composition Example" />
+</div>
 
----
+### 4. Inheritance (Generalization)
+Represents an "is-a" relationship where a subclass inherits attributes and behavior from a superclass.
 
-## Relationships
+### 5. Realization
+Indicates that a class implements the behavior defined by an interface.
 
-| Type               | Notation                | Description                                         |
-|--------------------|-------------------------|-----------------------------------------------------|
-| **Association**     | Solid line              | General connection between classes                  |
-| **Multiplicity**    | Numbers near association | Specifies number of instances (e.g., 1..*, 0..1)    |
-| **Aggregation**     | Hollow diamond          | “Has-a” relationship, whole-part but parts can exist independently |
-| **Composition**     | Filled diamond          | Strong “Has-a” relationship; parts depend on whole |
-| **Inheritance**     | Solid line with hollow arrow | “Is-a” relationship (generalization)                |
-| **Dependency**      | Dashed arrow            | One class depends on another temporarily            |
+### 6. Dependency
+A weaker relationship where a change in one class may affect another, but without strong ownership.
 
 ---
 
-## Example
-
-```
-
-+------------------+
-\|     Person       |
-+------------------+
-\| - name: String   |
-\| - age: int       |
-+------------------+
-\| + getName(): String |
-\| + getAge(): int    |
-+------------------+
-
-```
-     ^
-     |
-```
-
-+------------------+
-\|    Student       |
-+------------------+
-\| - studentId: int |
-+------------------+
-\| + getId(): int   |
-+------------------+
-
-```
-
----
-
-## Tips
-
-- Use clear, consistent naming.
-- Keep class responsibilities focused.
-- Use multiplicity to clarify relationships.
-- Use aggregation vs composition appropriately.
-
----
+**References:**
+- [UML Relationships – Wikipedia](https://en.wikipedia.org/wiki/Class_diagram)
