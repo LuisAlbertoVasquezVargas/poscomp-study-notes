@@ -11,7 +11,7 @@
 ## Rule of Sarrus
 
 <div style="background-color: white; padding: 0.5em; display: inline-block; border-radius: 4px;">
-  <img src="../assets/rule-of-sarrus.svg" alt="Rule of Sarrus" width="400">
+  <img src="../../assets/rule-of-sarrus.svg" alt="Rule of Sarrus" width="400">
 </div>
 
 **Rule of Sarrus:** The determinant of a $3 \times 3$ matrix is computed by summing the products of the down-right diagonals and subtracting the products of the up-right diagonals.
@@ -21,7 +21,7 @@
 ## Cofactor Expansion
 
 <div style="background-color: white; padding: 0.5em; display: inline-block; border-radius: 4px;">
-  <img src="../assets/cofactor-expansion.png" alt="Cofactor Expansion" width="400">
+  <img src="../../assets/cofactor-expansion.png" alt="Cofactor Expansion" width="400">
 </div>
 
 **Cofactor Expansion (Laplace’s Formula):** The determinant of an $n \times n$ matrix $A = [a_{ij}]$ can be computed by expanding along any row or column.
