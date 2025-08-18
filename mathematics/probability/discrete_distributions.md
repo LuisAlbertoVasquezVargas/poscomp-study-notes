@@ -259,3 +259,70 @@ $$
 $$
 \sigma^2 = \mathrm{Var}(X) = \frac{1-p}{p^2}
 $$
+
+---
+
+### Exponential Distribution
+
+The **Exponential distribution** models the **time between consecutive events** in a Poisson process, i.e., events that occur independently at a **constant average rate**.
+
+#### Probability Density Function (PDF)
+
+A continuous random variable X follows an exponential distribution with **rate parameter λ > 0** if its probability density function is:
+
+$$
+f_X(x) = 
+\begin{cases} 
+\lambda e^{-\lambda x}, & x \ge 0 \\
+0, & x < 0
+\end{cases}
+$$
+
+where
+
+* λ is the **rate parameter** (events per unit time),
+* x is the **time until the next event**.
+
+#### Cumulative Distribution Function (CDF)
+
+The probability that X ≤ x is:
+
+$$
+F_X(x) = P(X \le x) = 1 - e^{-\lambda x}, \quad x \ge 0
+$$
+
+#### Mean and Variance
+
+The expected value (mean) and variance are:
+
+$$
+E[X] = \frac{1}{\lambda}, \quad \mathrm{Var}(X) = \frac{1}{\lambda^2}
+$$
+
+**Derivation of the mean**:
+
+$$
+E[X] = \int_0^\infty x \lambda e^{-\lambda x} dx = \frac{1}{\lambda}
+$$
+
+#### Memoryless Property
+
+The exponential distribution is **memoryless**:
+
+$$
+P(X > s + t \mid X > s) = P(X > t), \quad s \ge 0, t \ge 0
+$$
+
+#### Interpretation
+
+The exponential distribution describes **waiting times** in a Poisson process. Examples:
+
+* Time until the next phone call in a call center
+* Time until a radioactive particle decays
+* Time between arrivals at a bus stop
+
+#### Relation to Poisson
+
+If the number of events in an interval follows a Poisson distribution with rate λ, the **time until the first event** follows an exponential distribution with the same rate.
+
+---
