@@ -1,8 +1,6 @@
-<!-- File: probability/discrete_distributions.md -->
+<!-- File: mathematics/probability/discrete_distributions.md -->
 
 # Discrete Probability Distributions
-
-TODO(luisvasquez): Add derivations for expectation and variance formulas.
 
 ---
 
@@ -14,7 +12,8 @@ $$
 P(X = x_i) = p_i
 $$
 
-where $x_i$ are the possible values of $X$. The PMF satisfies the normalization condition
+where $x_i$ are the possible values of $X$.  
+The PMF satisfies the normalization condition
 
 $$
 \sum_i p_i = 1
@@ -32,8 +31,6 @@ $$
 \mu = E(X) = \sum_i x_i p_i
 $$
 
----
-
 ### Second Moment
 
 The second moment of $X$ about the origin is
@@ -41,8 +38,6 @@ The second moment of $X$ about the origin is
 $$
 E(X^2) = \sum_i x_i^2 p_i
 $$
-
----
 
 ### Variance
 
@@ -66,7 +61,7 @@ $$
 
 ---
 
-### Probability of an Interval
+## Probability of an Interval
 
 For $a \leq b$, the probability that $X$ falls within $[a, b]$ is
 
@@ -76,7 +71,7 @@ $$
 
 ---
 
-### Law of the Unconscious Statistician
+## Law of the Unconscious Statistician
 
 For any function $g(X)$, the expected value of $g(X)$ is
 
@@ -95,8 +90,6 @@ For $X$ the outcome of a fair six-sided die:
 $$
 \mu = E(X) = \frac{1}{6}(1+2+3+4+5+6) = 3.5
 $$
-
----
 
 ### Variance of a Die Roll
 
@@ -122,34 +115,139 @@ $$
 
 ### Poisson Distribution
 
-The Poisson distribution models the number of events occurring in a fixed interval of time or space, given the events occur with a constant rate $\lambda > 0$ and independently.
+The **Poisson distribution** models the number of events that occur in a fixed interval of time or space, under the assumptions that events happen **independently** of each other and with a **constant average rate**.
 
-#### PMF
+#### Probability Mass Function
+
+A discrete random variable **X** is said to follow a Poisson distribution with parameter  
+$\lambda > 0$ if it has the probability mass function (PMF)
 
 $$
-P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \; k = 0, 1, 2, \dots
+P(X = k) = \frac{\lambda^{k} e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots
 $$
+
+where  
+- $k$ is the number of occurrences,  
+- $e$ is Euler’s number ($\approx 2.71828$),  
+- $k!$ is the factorial of $k$.  
 
 #### Mean and Variance
 
-$$
-\mu = E(X) = \lambda
-$$
+The parameter $\lambda$ represents the **expected number of events** in the interval.  
+A key property of the Poisson distribution is that both the mean and the variance are equal to $\lambda$:
 
 $$
-\sigma^2 = \mathrm{Var}(X) = \lambda
+E[X] = \operatorname{Var}(X) = \lambda
 $$
+
+#### Interpretation
+
+The Poisson distribution applies to systems with a **large number of possible events**, each of which has a **small probability of happening** in a short interval.  
+Examples include:  
+- the number of phone calls received per minute at a call center,  
+- the number of typos on a printed page,  
+- the number of cosmic rays hitting a detector in one second.  
+
+#### Rate–time Form
+
+If events occur at average rate $r$ per unit time, then in an interval of length $T$ the expected number of events is
+
+$$
+\lambda = rT
+$$
+
+so the distribution becomes
+
+$$
+P(\text{k events in interval T}) = \frac{(rT)^k e^{-rT}}{k!}.
+$$
+
+---
+
+#### Derivation (Binomial → Poisson, using ε)
+
+This derivation shows how the Poisson PMF arises as the limit of a Binomial distribution when the interval is split into many tiny, independent slots.
+
+**Setup**
+
+1. Fix the observation interval of length $T$ and a rate $r$ (events per unit time). Define
+   $$
+   \lambda = rT.
+   $$
+2. Split the interval into $n$ equal subintervals (slots) of length
+   $$
+   \varepsilon = \frac{T}{n}.
+   $$
+3. Assume:
+   - each slot has probability $p_\varepsilon$ of containing exactly one event,
+   - probability of two or more events in a single slot is negligible as $\varepsilon \to 0$,
+   - slots are independent.
+
+To match the rate $r$, set
+$$
+p_\varepsilon = r \varepsilon = \frac{\lambda}{n}.
+$$
+
+**Binomial model**
+
+The total number of events in $[0,T]$ is then approximately Binomial$(n, p_\varepsilon)$:
+
+$$
+P(X = k) = \binom{n}{k} (p_\varepsilon)^k (1 - p_\varepsilon)^{\,n-k}
+= \binom{n}{k} \left(\frac{\lambda}{n}\right)^k \left(1 - \frac{\lambda}{n}\right)^{\,n-k}.
+$$
+
+**Take the limit $n \to \infty$ (equivalently $\varepsilon \to 0$)**
+
+For fixed $k$:
+
+1. The combinatorial term:
+   $$
+   \binom{n}{k} \left(\frac{\lambda}{n}\right)^k
+   = \frac{n(n-1)\cdots(n-k+1)}{k!} \left(\frac{\lambda}{n}\right)^k
+   = \frac{\lambda^k}{k!}\prod_{j=0}^{k-1}\frac{n-j}{n}
+   \longrightarrow \frac{\lambda^k}{k!},
+   $$
+   because each factor $(n-j)/n \to 1$.
+
+2. The exponential term:
+   $$
+   \left(1 - \frac{\lambda}{n}\right)^{n} \longrightarrow e^{-\lambda}.
+   $$
+
+3. The remaining factor:
+   $$
+   \left(1 - \frac{\lambda}{n}\right)^{-k} \longrightarrow 1.
+   $$
+
+Combining these limits:
+
+$$
+\lim_{n\to\infty} P(X = k)
+= \frac{\lambda^k}{k!} \, e^{-\lambda}
+= \frac{\lambda^k e^{-\lambda}}{k!}.
+$$
+
+This is the Poisson PMF.
+
+**Remarks**
+
+- In the rate–time language, replace $\lambda$ by $rT$ to obtain
+  $$
+  P(X = k) = \frac{(rT)^k e^{-rT}}{k!}.
+  $$
+- The key scaling is $p_\varepsilon \approx r\varepsilon$: probability of one event in a short slot is proportional to slot length. Choosing $p_\varepsilon = 1/n$ would force a fixed mean 1, which is not the general situation.
 
 ---
 
 ### Geometric Distribution
 
-The Geometric distribution models the number of Bernoulli trials needed to get the first success, where each trial has success probability $p$.
+The **Geometric distribution** models the number of Bernoulli trials needed to get the first success, where each trial has success probability $p$.
 
 #### PMF
 
 $$
-P(X = k) = (1-p)^{k-1}p, \; k = 1, 2, 3, \dots
+P(X = k) = (1-p)^{k-1}p, \quad k = 1, 2, 3, \dots
 $$
 
 #### Mean and Variance
