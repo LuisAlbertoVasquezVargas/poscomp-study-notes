@@ -13,16 +13,24 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 #### Analytic Geometry
 - [Conics Eccentricity](./mathematics/analytic_geometry/conics_excentricity.md)
 
+#### Algorithm Analysis
+- [Asymptotic Notation](./mathematics/algorithm_analysis/asymptotic_notation.md)
+
 #### Calculus
 - [Differentiation](./mathematics/calculus/differentiation.md)
 - [Green's Theorem](./mathematics/calculus/green_theorem.md)
 - [Integration](./mathematics/calculus/integration.md)
 - [Integration Methods](./mathematics/calculus/integration_methods.md)
 - [L'Hôpital's Rule](./mathematics/calculus/lhospital_rule.md)
+- [Taylor & Maclaurin (√5 Approximation)](./mathematics/calculus/taylor_maclaurin_sqrt.md)
 
 #### Combinatorics
 - [Inclusion-Exclusion Principle](./mathematics/combinatorics/inclusion_exclusion.md)
 - [Permutations and Combinations](./mathematics/combinatorics/permutations_combinations.md)
+
+#### Geometry
+- [Coordinate Systems](./mathematics/geometry/coordinate_systems.md)
+- [Point-Line Distance](./mathematics/geometry/point_line_distance.md)
 
 #### Linear Algebra
 - [Characteristic Polynomial](./mathematics/linear_algebra/characteristic_polynomial.md)
@@ -54,10 +62,6 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 #### Statistics
 - [Hypothesis Testing](./mathematics/statistics/hypothesis_testing.md)
 
-#### Geometry
-- [Coordinate Systems](./mathematics/geometry/coordinate_systems.md)
-- [Point-Line Distance](./mathematics/geometry/point_line_distance.md)
-
 ---
 
 ### Computer Science Fundamentals
@@ -69,15 +73,28 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 #### Compilers
 - [Translation Scheme](./computer_science_fundamentals/compilers/translation_scheme.md)
 
+#### Data Compression
+- [Basics](./computer_science_fundamentals/data_compression/data_compression_basics.md)
+
+#### Data Structures
+- [Binary Search Trees](./computer_science_fundamentals/data_structures/binary_search_trees.md)
+- [Hash Tables](./computer_science_fundamentals/data_structures/hash_tables.md)
+- [Heaps](./computer_science_fundamentals/data_structures/heaps.md)
+- [Stacks](./computer_science_fundamentals/data_structures/stacks.md)
+
+#### Databases
+- [B-Trees](./computer_science_fundamentals/databases/b_trees.md)
+- [Deadlock](./computer_science_fundamentals/databases/deadlock.md)
+- [SQL Joins](./computer_science_fundamentals/databases/sql_joins.md)
+
 #### Discrete Mathematics
 - [Boolean Algebra](./computer_science_fundamentals/discrete_math/boolean_algebra.md)
 - [Hamming Code](./computer_science_fundamentals/discrete_math/hamming_code.md)
 - [Karnaugh Maps](./computer_science_fundamentals/discrete_math/karnaugh_maps.md)
 - [Order Relations](./computer_science_fundamentals/discrete_math/order_relations.md)
 
-#### Databases
-- [Deadlock](./computer_science_fundamentals/databases/deadlock.md)
-- [SQL Joins](./computer_science_fundamentals/databases/sql_joins.md)
+#### Filesystems
+- [Free Space Management](./computer_science_fundamentals/filesystems/free_space_management.md)
 
 #### Formal Languages
 - [State Machines](./computer_science_fundamentals/formal_languages/state_machines.md)
@@ -113,6 +130,7 @@ Organized notes, formulas, and references for studying key topics for the POSCOM
 - [Transparencies](./computing_technology/distributed_systems/transparencies.md)
 
 #### Networking
+- [Bit Length](./computing_technology/networking/bit_length.md)
 - [CIDR Notation](./computing_technology/networking/cidr_notation.md)
 - [DNS Protocol](./computing_technology/networking/dns_protocol.md)
 - [IP Protocol Basics](./computing_technology/networking/ip_protocol_basics.md)
