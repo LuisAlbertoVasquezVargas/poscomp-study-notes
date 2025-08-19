@@ -62,9 +62,56 @@ Data compression aims to reduce the size of data representation while preserving
 
 ## 6. Fixed-Length vs Variable-Length Coding
 
-| Coding Type   | Codeword Length          | Efficiency |
-|---------------|--------------------------|------------|
+| Coding Type   | Codeword Length              | Efficiency |
+|---------------|------------------------------|------------|
 | Fixed-length  | All symbols have same length | Simple but less efficient when probabilities vary |
 | Variable-length | Length depends on frequency | More efficient — shorter for frequent symbols |
+
+---
+
+## 7. Lempel–Ziv–Welch (LZW) Compression
+
+- **Type**: Lossless, dictionary-based compression.
+- **Core idea**: Build a dictionary of sequences dynamically while reading the input stream.  
+  - Encoder and decoder start with the same initial dictionary (typically all single characters).
+  - As sequences appear, they are added to the dictionary with new codes.
+  - Both encoder and decoder construct the dictionary on the fly — no need to transmit it.
+
+### 7.1 Algorithm (Encoding)
+1. Initialize dictionary with all possible single-character strings.
+2. Set `w = ""`.
+3. For each character `c` in the input:
+   - If `w + c` is in the dictionary, set `w = w + c`.
+   - Otherwise:
+     - Output the code for `w`.
+     - Add `w + c` to the dictionary.
+     - Set `w = c`.
+4. Output the code for `w` (if non-empty).
+
+### 7.2 Algorithm (Decoding)
+- Decoder also starts with the same initial dictionary.
+- Reads codes one by one and reconstructs the strings.
+- Adds new entries to the dictionary in parallel with the encoder.
+
+### 7.3 Example
+Input: `ABABABA`  
+- Initial dictionary: `{A, B}`  
+- Processing:
+  - `A` → output code(A), add `AB`.
+  - `B` → output code(B), add `BA`.
+  - `AB` found → output code(AB), add `ABA`.
+  - `ABA` found → output code(ABA).  
+Compressed output = sequence of codes instead of repeating characters.
+
+### 7.4 Characteristics
+- **Fixed-length codes** (e.g., 9–12 bits), not frequency-based.
+- **Efficiency**: Good for text and data with repeated patterns.
+- **Data structures**:
+  - Dictionary can be implemented with hash tables or tries.
+- **Applications**: GIF images, Unix `compress` utility, TIFF format.
+
+### 7.5 Comparison
+- Unlike **Huffman coding** (statistical, frequency-based),  
+  LZW is **dictionary-based**, adapting to repeated patterns instead of symbol probabilities.
 
 ---
