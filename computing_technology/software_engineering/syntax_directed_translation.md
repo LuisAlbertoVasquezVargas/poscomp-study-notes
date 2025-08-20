@@ -1,7 +1,3 @@
-Here’s a clean set of notes based on your content, formatted according to your coding/Markdown standards:
-
----
-
 <!-- File: computing_technology/software_engineering/syntax_directed_translation.md -->
 
 # Syntax-Directed Translation – Synthesized vs Inherited Attributes
@@ -55,5 +51,3 @@ Here’s a clean set of notes based on your content, formatted according to your
 ✅ **Important:** In production 4, T.val and F.val are synthesized.
 
 ---
-
-If you want, I can also create a **compact visual diagram of the parse tree with synthesized attribute flow**, which makes it much easier to memorize for Poscomp-style exams. Do you want me to do that?
