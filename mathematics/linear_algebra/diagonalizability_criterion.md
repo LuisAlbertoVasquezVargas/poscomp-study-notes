@@ -1,55 +1,107 @@
-<!-- File: linear_algebra/diagonalizability_criterion.md -->
+<!-- File: mathematics/linear_algebra/diagonalizability_criterion.md -->
 
-# Diagonalizability Criterion (Distinct Roots)
+# Diagonalizability Criterion
 
 ---
 
-## Theorem
+## Definition
 
-If an $n \times n$ matrix has $n$ **distinct roots** of its characteristic equation:
+A matrix is **diagonalizable** if there exists an invertible matrix $P$ and a diagonal matrix $D$ such that:
 
 $$
-\det(A - \lambda I) = 0
+A = P D P^{-1}
 $$
 
-then the matrix is **diagonalizable**.
+This means $A$ can be represented in a simpler form using a basis of eigenvectors.
 
-This means there exists an invertible matrix $P$ and a diagonal matrix $D$ such that:
+---
+
+## Diagonalizability with Distinct Roots
+
+**Theorem:**
+If an $n \times n$ matrix has $n$ **distinct roots of its characteristic polynomial** (i.e., $n$ distinct eigenvalues), it is **always diagonalizable**.
+
+* Each root corresponds to a **one-dimensional eigenspace**.
+* Eigenvectors corresponding to different roots are **linearly independent**.
+* These eigenvectors form a basis for $\mathbb{R}^n$ and can be used as columns of $P$ to diagonalize $A$.
+
+**Practical Steps:**
+
+1. Compute the **characteristic polynomial**:
+
+$$
+p(\lambda) = \det(A - \lambda I)
+$$
+
+2. Solve
+
+$$
+p(\lambda) = 0
+$$
+
+for eigenvalues $\lambda$.
+
+3. If there are $n$ distinct roots → the matrix is diagonalizable.
+
+---
+
+## Counterexample: Repeated Eigenvalues
+
+A matrix can have repeated eigenvalues and still be diagonalizable.
+
+**Example:**
+
+$$
+A = 
+\begin{bmatrix}
+0 & 1 & -2 \\
+0 & 1 & 0 \\
+1 & -1 & 3
+\end{bmatrix}
+$$
+
+* Characteristic polynomial:
+
+$$
+p(\lambda) = -(\lambda - 1)^2(\lambda - 2)
+$$
+
+After computing eigenvectors, we can write the diagonalization as:
+
+$$
+P = 
+\begin{bmatrix}
+1 & 0 & 1 \\
+0 & 1 & 1 \\
+1 & 1 & 1
+\end{bmatrix}, 
+\quad
+D = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 2
+\end{bmatrix}
+$$
+
+So we have:
+
+$$
+A = P D P^{-1}
+$$
+
+This shows $A$ is diagonalizable despite having a repeated eigenvalue.
+
+---
+
+## Summary
+
+* **All roots of the characteristic polynomial are distinct → guaranteed diagonalizable**
+* **Repeated roots can still allow diagonalizability**, depending on eigenvectors.
+* A matrix is diagonalizable **iff** there exists a basis of eigenvectors such that
 
 $$
 A = P D P^{-1}
 $$
 
 ---
-
-## What This Means
-
-- Solving $\det(A - \lambda I) = 0$ gives us special numbers called **eigenvalues**.
-- If the equation has $n$ different (non-repeating) solutions, then the matrix can be simplified to a **diagonal form** through a change of basis.
-
----
-
-## Practical Steps
-
-To determine if a matrix is diagonalizable:
-
-1. Compute the **characteristic polynomial**:
-
-   $$
-   \det(A - \lambda I)
-   $$
-
-2. Solve the equation:
-
-   $$
-   \det(A - \lambda I) = 0
-   $$
-
-3. If it has **$n$ distinct solutions**, the matrix is diagonalizable.
-
----
-
-## Summary
-
-A matrix is diagonalizable if it can be transformed into a diagonal matrix.  
-This always happens when the characteristic equation has **$n$ distinct roots**.
