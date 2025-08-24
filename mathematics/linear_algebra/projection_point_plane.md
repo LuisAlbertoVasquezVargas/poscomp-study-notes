@@ -67,3 +67,26 @@ This is handy when the plane is given in normal form rather than by a spanning s
 | General subspace $W$ | $P = A (A^T A)^{-1} A^T$        |
 | Line (1D case)       | $P = \dfrac{u\,u^T}{u^T u}$     |
 | Plane (via normal)   | $P = I - \dfrac{n\,n^T}{n^T n}$ |
+
+---
+
+## 🧠 Memory Aid: “Gram Sandwich”
+
+Visualize the formula
+
+$$
+P_W = A (A^T A)^{-1} A^T
+$$
+
+as a **sandwich**:
+
+$$
+\boxed{A} \;\; \boxed{(A^T A)^{-1}} \;\; \boxed{A^T}
+$$
+
+* **Left bread:** $A$ → basis vectors (columns)
+* **Middle filling:** $(A^T A)^{-1}$ → inverse of the Gram matrix
+* **Right bread:** $A^T$ → transpose to close the sandwich
+
+> **Idea:** Wrap the inverse of the Gram matrix between the basis vectors to remember the projection matrix structure.
+
