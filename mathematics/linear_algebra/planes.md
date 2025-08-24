@@ -17,7 +17,7 @@ define a vector $\mathbf{n} = (a, b, c)$ that is orthogonal (normal) to the plan
 ---
 
 <div style="background-color: white; padding: 0.5em; display: inline-block; border-radius: 4px;">
-  <img src="../assets/plane_equation.svg" alt="Plane Equation" width="400">
+  <img src="../../assets/plane_equation.svg" alt="Plane Equation" width="400">
 </div>
 
 ---

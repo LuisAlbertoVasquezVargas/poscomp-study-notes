@@ -1,65 +1,69 @@
-<!-- File: linear_algebra/projection_point_plane.md -->
+<!-- File: mathematics/linear_algebra/projection_point_plane.md -->
 
-# Projection of a Point onto a Plane
+# Projection of a Point onto a Plane or Subspace
 
-## 🧮 Component Form
+## ✅ General Formula for Projection onto a Subspace
 
-Given:
-
-- A point **P** = $(x_0, y_0, z_0)$  
-- A plane:  $a x + b y + c z + d = 0$  
-  with normal vector **n** = $(a, b, c)$
-
-We define:
-
-- Scalar:
-
-  $$
-  t = \frac{a x_0 + b y_0 + c z_0 + d}{a^2 + b^2 + c^2}
-  $$
-
-- Vectors:
-
-  $$
-  \vec{p} = \begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}, \quad
-  \vec{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}
-  $$
-
-Then the **orthogonal projection** of point **P** onto the plane is:
+If a subspace $W \subseteq \mathbb{R}^n$ is spanned by linearly independent vectors (columns of $A$), then the **projection matrix** is:
 
 $$
-\vec{p}_{\text{proj}} = \vec{p} - t \vec{n}
+P_W = A (A^T A)^{-1} A^T
 $$
 
-Which in component form means:
+For any vector $x \in \mathbb{R}^n$, the projection is:
 
 $$
-P' = (x_0, y_0, z_0) - t \cdot (a, b, c)
-$$
-
-Or explicitly:
-
-$$
-P' = \left( x_0 - a t,\;\; y_0 - b t,\;\; z_0 - c t \right)
+x_{\text{proj}} = P_W \, x
 $$
 
 ---
 
-## 🧭 Pure Vector Form
+## ▶ Special Case: Projection onto a Line (1D Subspace)
 
-Same idea, using inner product notation:
-
-Let:
-
-- $\vec{p}$ = position vector of the point  
-- $\vec{n}$ = normal vector of the plane  
-- $d$ = scalar from the plane equation $\, \vec{n} \cdot \vec{x} + d = 0$
-
-Then:
+If $W = \mathrm{span}(u)$ for some nonzero vector $u$, then:
 
 $$
-\vec{p}_{\text{proj}} = \vec{p} - \frac{\vec{n} \cdot \vec{p} + d}{\|\vec{n}\|^2} \vec{n}
+P = \frac{u\,u^T}{u^T u}
 $$
+
+*(This is the general formula with $A = u$.)*
 
 ---
 
+## 🔍 Auxiliary: Projection onto a Plane from a Point and Normal Vector
+
+For a plane
+
+$$
+a x + b y + c z + d = 0,
+$$
+
+with normal
+
+$$
+n = \begin{bmatrix} a \\ b \\ c \end{bmatrix},
+$$
+
+and a point
+
+$$
+p = \begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix},
+$$
+
+the projection of $p$ onto the plane is:
+
+$$
+p_{\text{proj}} = p - \frac{n^T p + d}{n^T n}\,n.
+$$
+
+This is handy when the plane is given in normal form rather than by a spanning set.
+
+---
+
+## ✅ Summary Table (Matrix Perspective)
+
+| **Subspace Type**    | **Projection Matrix Formula**   |
+| -------------------- | ------------------------------- |
+| General subspace $W$ | $P = A (A^T A)^{-1} A^T$        |
+| Line (1D case)       | $P = \dfrac{u\,u^T}{u^T u}$     |
+| Plane (via normal)   | $P = I - \dfrac{n\,n^T}{n^T n}$ |
